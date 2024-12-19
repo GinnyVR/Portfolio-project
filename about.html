@@ -6,12 +6,20 @@
     <title>Anna Villebro Portfolio</title>
     <link rel="stylesheet" href="./resources/index.css">
     <link rel="stylesheet" href="./resources/toggle.css">
+    <link rel="stylesheet" href="./resources/burger-menu.css">
     <script src="main.js" defer></script>
 </head>
 <body>
     <nav class="navigation-white">
         <span id="logo-white"><a href="./index.html">Anna Villebro</a></span>
-        <div class="nav-bar-white">
+        
+        <div class="burger-menu" id="burger-menu">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        
+        <div class="nav-bar-white" id="nav-bar-white">
             <a href="./index.html">Home</a>
             <a href="./portfolio.html">Portfolio</a>
             <a href="./about.html" class="active">About Me</a>
@@ -23,6 +31,8 @@
                 <label for="toggle-dark-mode" class="toggle-label"></label>
             </div>
         </div>
+
+
     </nav>
 
     <div class="container">
