@@ -1,12 +1,21 @@
-// Get the current URL path
-const currentPath = window.location.pathname.split("/").pop();
+function myFunction() {
+  let element = document.body;
+  element.classList.toggle("dark-theme");
 
-// Select all navigation links
-const navLinks = document.querySelectorAll("nav ul li a");
+  let img = document.getElementById('linkedin');
+  if (img) {
+  
+    let newSrc = "./resources/images/Link2.png";
+    let oldSrc = "./resources/images/Skærmbillede 2024-12-18 kl. 15.17.44.png";
 
-navLinks.forEach(link => {
-  // Check if the link's href matches the current path
-  if (link.getAttribute("href") === currentPath) {
-    link.classList.add("active");
-  }
-});
+    if (img.src.endsWith("Link2.png")) {
+      img.src = oldSrc;
+      
+    } else {
+      img.src = newSrc;
+      
+    }
+  } 
+}
+
+
