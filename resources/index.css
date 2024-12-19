@@ -1,0 +1,340 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family:'Poppins', sans-serif;
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+}
+
+
+
+/* General button style */
+.button {
+    display: inline-block;
+    background-color: #D07357; /* Matching background color */
+    font-size: 1.5em; /* Font size */
+    font-weight: 400; /* Normal weight */
+    text-align: center;
+    padding: 20px 30px; /* Vertical and horizontal padding */
+    border: none; /* No border */
+    border-radius: 4px; /* Slight rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+    z-index: 2;
+    
+    max-width: 250px
+}
+.button a {
+    color: #fff; /* White text color */
+    text-decoration: none; /* Removes underline */
+}
+
+.button:hover {
+    background-color: #b85e46; /* Slightly darker shade on hover */
+}
+
+h2 {
+    font-size: 3em;
+    font-weight: 700;
+    color: #D07357;
+}
+
+/* NAVIGATION HERE - black*/
+
+.nav-bar img {
+    max-width: 2rem;
+    margin-top: 6px;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: inherit;
+    padding: 0 1em;
+    color: white;
+    line-height: 2;
+    margin: 0 3px;
+}
+.nav-bar a:hover {
+    background-color: lightgray;
+    border-radius: 4px;
+}
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+}
+
+#logo a {
+    font-weight: 400;
+    font-size: 1.2em;
+    font-style: italic;
+    color: white;
+    text-decoration: none;
+}
+
+.navigation {
+    display: flex;
+    height: 5em;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    background-color: transparent;
+    z-index: 2;
+    position: relative;
+   
+}
+
+.active {
+    color: white !important; 
+    background-color:#b85e46;
+    border-radius: 4px;
+}
+
+/* NAVIGATION HERE - white*/
+
+.nav-bar-white img {
+    max-width: 2rem;
+    margin-top: 6px;
+}
+
+.nav-bar-white a {
+    text-decoration: none;
+    color: inherit;
+    padding: 0 1em;
+    color: black;
+    line-height: 2;
+    margin: 0 3px;
+    
+}
+
+.nav-bar-white a:hover {
+    background-color: lightgray;
+    border-radius: 4px;
+    
+}
+
+.nav-bar-white {
+    display: flex;
+    align-items: center;
+    
+}
+
+#logo-white a {
+    font-weight: 400;
+    font-size: 1.2em;
+    font-style: italic;
+    color: black;
+    text-decoration: none;
+}
+
+.navigation-white {
+    display: flex;
+    height: 5em;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    background-color: transparent;
+    z-index: 2;
+    position: relative;   
+}
+
+
+/* BANNER HERE*/
+
+.banner {
+    background-image: url(./images/Group\ 1.png);
+    background-size: cover; /* Adjust the size of the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-position: top; /* Position the image in the center */
+    z-index: 0;
+    height: 100vh;
+    margin-top: -5em;
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/*Opacity effect*/
+.banner::before {
+    content: ''; /* Required for pseudo-elements */
+    position: absolute; /* Ensures it covers the .banner */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent black overlay */
+    z-index: 1; /* Layer it above the background image */
+}
+
+.banner h1 {
+    font-size: 4em;
+    position: relative; /* Ensure it's above the overlay */
+    z-index: 2; /* Place text above the overlay */
+    color: white; /* Ensure text is visible on dark overlay */
+    line-height: 1;
+}
+
+.banner h3 {
+    font-size: 1.5em;
+    position: relative; /* Ensure it's above the overlay */
+    z-index: 2; /* Place text above the overlay */
+    color: white; /* Ensure text is visible on dark overlay */
+    line-height: 2;
+    font-weight: 300;
+}
+
+
+/* PORTFOLIO HERE*/
+.image-banner {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+    margin-top: 1em;
+    width: auto;
+}
+
+.image-banner img {
+    text-align: center;
+    padding: 30px;
+    width: 100%; /* Make the image fill the container */
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the container without distortion */
+    transition: transform 0.3s ease; /* Smooth zoom effect */
+
+}
+
+figure {
+    max-width: 500px;
+}
+
+.image-banner figure:hover {
+    transform: scale(1.1); /* Zoom in by 10% */
+}
+
+figcaption {
+    font-size: 1.2em;
+    text-align: left;
+    padding: 0px 30px;
+}
+
+.portfolio {
+    margin-top: 2em;
+    text-align: center;
+    
+}
+
+
+/* ABOUT ME HERE*/
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: top;
+    flex-wrap: wrap;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    
+    text-align: left;
+    max-width: 900px;
+    min-width: 500px;
+    width: 100%;
+    text-align: left;
+    padding: 40px;
+    margin: 0 auto;
+    line-height: 2;
+    position: relative;
+    flex: 1 1 500px;
+
+}
+.image-about {
+    flex: 1 1 500px;
+    max-width: 800px;
+    padding: 40px;
+    
+}
+
+.image-about img {
+    width: 100%; /* Makes the image responsive */
+    height: auto; /* Maintains aspect ratio */
+    display: block; /* Remove spacing below the image */
+}
+
+
+/* CONTACT HERE*/
+
+.contact-con {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: top;
+    flex-wrap: wrap;
+}
+
+.text-contact {
+    display: flex;
+    flex-direction: column;
+    
+    text-align: left;
+    max-width: 900px;
+    min-width: 500px;
+    width: 100%;
+    text-align: left;
+    padding: 40px;
+    margin: 0 auto;
+    line-height: 2;
+    position: relative;
+    flex: 1 1 500px;
+
+}.text-contact h2 {
+    line-height: 1.5;
+}
+
+
+.image-contact {
+    flex: 1 1 500px;
+    max-width: 800px;
+    padding: 40px;
+    
+}
+
+.image-contact img {
+    width: 100%; /* Makes the image responsive */
+    height: auto; /* Maintains aspect ratio */
+    display: block; /* Remove spacing below the image */
+}
+
+
+/*FORM HERE*/
+
+.form {
+    width: 100%; /* Ensure the container takes up the desired width */
+    max-width: 500px; /* Optional: set a max width for the container */
+    margin: 10px 0; /* Add some spacing */
+}
+  
+input,
+textarea {
+    width: 100%; /* Fill the container width */
+    padding: 10px; /* Add padding for better usability */
+    font-size: 16px; /* Optional: adjust font size */
+    border: 1px solid #ccc; /* Optional: add a border */
+    border-radius: 5px; /* Optional: round the corners */
+}
+  
+textarea {
+    height: 100px; /* Optional: define a height for the textarea */
+}
+
