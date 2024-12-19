@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anna Villebro Portfolio</title>
     <link rel="stylesheet" href="./resources/index.css">
+    <link rel="stylesheet" href="./resources/toggle.css">
     <script src="main.js" defer></script>
 </head>
 <body>
@@ -17,7 +18,10 @@
             <a href="./contact.html" class="active">Contact</a>
             <a href="https://www.linkedin.com/in/anna-villebro-rasmussen-5a2095106/" target="_blank"><img id="linkedin" src="./resources/images/Link2.png" alt=""></a>
             
-            <button id="button2" onclick="myFunction()">Toggle dark mode</button>    
+            <div class="toggle-container">
+                <input type="checkbox" id="toggle-dark-mode" onclick="myFunction()">
+                <label for="toggle-dark-mode" class="toggle-label"></label>
+            </div>   
         </div>
     </nav>
 
@@ -29,14 +33,14 @@
             <h2>Let's work together!</h2>
             <br>
 
-            <form class="form">
+            <form class="form" action="mailto:anna.villebro@gmail.com" method="POST" enctype="text/plain">
                 <label for="email">E-mail: </label> <br>
-                <input type="text" id="email" name="email" required>
+                <input type="email" id="email" name="" required>
                 <br> <br>
                 <label for="message">Message: </label> <br>
                 <textarea id="message" name="message" rows="4" cols="50" required></textarea>
                 <br> <br>
-                <button class="button">Send</button>
+                <button class="button" type="submit">Send</button>
             </form>
         </div>
 

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anna Villebro Portfolio</title>
     <link rel="stylesheet" href="./resources/index.css">
+    <link rel="stylesheet" href="./resources/toggle.css">
     <script src="main.js" defer></script>
 </head>
 <body>
@@ -17,7 +18,11 @@
             <a href="./contact.html">Contact</a>
             <a href="https://www.linkedin.com/in/anna-villebro-rasmussen-5a2095106/" target="_blank"><img id="linkedin" src="./resources/images/Link2.png" alt=""></a>
             
-            <button id="button2" onclick="myFunction()">Toggle dark mode</button>
+            <!--<button id="button2" onclick="myFunction()">Toggle dark mode</button>-->
+            <div class="toggle-container">
+                <input type="checkbox" id="toggle-dark-mode" onclick="myFunction()">
+                <label for="toggle-dark-mode" class="toggle-label"></label>
+            </div>
         </div>
     </nav>
 
